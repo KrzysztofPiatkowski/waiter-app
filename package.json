@@ -26,7 +26,7 @@
   "scripts": {
     "client": "react-scripts start",
     "server": "json-server --watch db.json --port 3131",
-    "start": "concurrently \"npm run server\" \"wait-on http://localhost:3131/tables && react-scripts start\"",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
