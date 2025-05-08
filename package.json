@@ -24,13 +24,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "client": "react-scripts start",
-    "server": "json-server --watch db.json --port 3131",
-    "start": "node server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "start": "react-scripts start",
+  "server": "json-server --watch db.json --port 3131",
+  "dev": "concurrently \"npm run server\" \"wait-on http://localhost:3131/tables && npm start\"",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
