@@ -1,7 +1,7 @@
 # Waiter  App
 
 Link do aplikacji: 
-https://09c38f0b-4f7b-4d28-adb8-2e41cb9ff465-00-2zcl5ja3l6jw5.kirk.replit.dev/
+https://4dca1d4a-6972-48f9-ab88-fa4947872a98-00-26i415h8mi1bz.picard.replit.dev/
 
 
 
