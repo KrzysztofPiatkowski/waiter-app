@@ -1,10 +1,7 @@
-import settings from '../settings';
+import { API_URL } from '../config';
 
-// Selektory (dodamy później)
-
-// ACTION TYPES – lepiej nazywać akcje z prefiksem
+// ACTION TYPES
 const createActionName = actionName => `app/tables/${actionName}`;
-
 const LOAD_TABLES = createActionName('LOAD_TABLES');
 
 // ACTION CREATORS
@@ -12,7 +9,7 @@ export const loadTables = payload => ({ type: LOAD_TABLES, payload });
 
 export const fetchTables = () => {
   return (dispatch) => {
-    fetch(`${settings.api.baseURL}/tables`)
+    fetch(`${API_URL}/tables`)
       .then(res => res.json())
       .then(data => dispatch(loadTables(data)))
       .catch(err => console.error('Fetch tables error:', err));
